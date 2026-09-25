@@ -1,0 +1,80 @@
+[
+  {
+    "label": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+    "input": {
+      "ucr": 100,
+      "vol": 1440,
+      "pcr": 1,
+      "sexo": "M",
+      "peso": 70,
+      "altura": 170
+    },
+    "expected": {
+      "raw": {
+        "cl": 100,
+        "clc": 95.153,
+        "exc": 20.571
+      },
+      "main": "95",
+      "level": "low",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "ucr": 100,
+      "vol": 1440,
+      "pcr": 1,
+      "sexo": "M",
+      "peso": 70,
+      "altura": 170
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+    "input": {
+      "ucr": 80,
+      "vol": 1500,
+      "pcr": 1.5,
+      "sexo": "F"
+    },
+    "expected": {
+      "raw": {
+        "cl": 55.556
+      },
+      "level": "mid",
+      "verdict": "G3a",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "ucr": 80,
+      "vol": 1500,
+      "pcr": 1.5,
+      "sexo": "F"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+    "input": {
+      "ucr": 60,
+      "vol": 1000,
+      "pcr": 2,
+      "sexo": "M"
+    },
+    "expected": {
+      "raw": {
+        "cl": 20.833
+      },
+      "level": "high",
+      "verdict": "G4",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "ucr": 60,
+      "vol": 1000,
+      "pcr": 2,
+      "sexo": "M"
+    },
+    "expandedZeroOptions": []
+  }
+]

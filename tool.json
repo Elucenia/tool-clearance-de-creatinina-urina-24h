@@ -1,0 +1,217 @@
+{
+  "tool": {
+    "id": "clearance-de-creatinina-urina-24h",
+    "title": "Clearance de creatinina em urina de 24 h",
+    "short": "Função renal medida, com checagem da coleta",
+    "desc": "Calcule o clearance de creatinina medido na urina de 24 horas, com correção para 1,73 m² e checagem da adequação da coleta pela creatinina excretada.",
+    "lead": "Mede o clearance de creatinina a partir da urina de 24 horas e da creatinina sérica. Útil quando a TFG estimada é pouco confiável, como em extremos de massa muscular, amputações ou dietas especiais.",
+    "spec": [
+      "nefrologia",
+      "clinica-medica",
+      "medicina-laboratorial"
+    ],
+    "fields": [
+      [
+        "ucr",
+        "Creatinina urinária",
+        "num",
+        {
+          "min": 5,
+          "max": 500,
+          "step": 0.1,
+          "unit": "mg/dL",
+          "ph": "100"
+        }
+      ],
+      [
+        "vol",
+        "Volume urinário de 24 h",
+        "num",
+        {
+          "min": 100,
+          "max": 10000,
+          "unit": "mL",
+          "ph": "1440"
+        }
+      ],
+      [
+        "pcr",
+        "Creatinina sérica",
+        "num",
+        {
+          "min": 0.2,
+          "max": 20,
+          "step": 0.01,
+          "unit": "mg/dL",
+          "ph": "1,0"
+        }
+      ],
+      [
+        "sexo",
+        "Sexo",
+        "radio",
+        {
+          "opts": {
+            "F": "Feminino",
+            "M": "Masculino"
+          }
+        }
+      ],
+      [
+        "peso",
+        "Peso (para correção e checagem da coleta)",
+        "num",
+        {
+          "min": 20,
+          "max": 300,
+          "step": 0.1,
+          "unit": "kg",
+          "ph": "70",
+          "opt": true
+        }
+      ],
+      [
+        "altura",
+        "Altura (para correção por 1,73 m²)",
+        "num",
+        {
+          "min": 100,
+          "max": 230,
+          "unit": "cm",
+          "ph": "170",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p>ClCr (mL/min) = (creatinina urinária × volume de 24 h em mL) ÷ (creatinina sérica × 1.440).</p><p>Corrigido = ClCr × 1,73 ÷ superfície corporal (Mosteller). Creatinina excretada (mg/kg/dia) = creatinina urinária × volume (dL) ÷ peso.</p>",
+    "table": [
+      [
+        "Creatinina excretada",
+        "Coleta"
+      ],
+      [
+        "Homens 20 a 25 mg/kg/dia",
+        "Compatível com coleta completa"
+      ],
+      [
+        "Mulheres 15 a 20 mg/kg/dia",
+        "Compatível com coleta completa"
+      ],
+      [
+        "Abaixo do esperado",
+        "Coleta incompleta ou massa muscular baixa"
+      ],
+      [
+        "Acima do esperado",
+        "Coleta de mais de 24 h ou erro de volume"
+      ]
+    ],
+    "table_note": "O resultado é classificado nas categorias de TFG da KDIGO (G1 ≥ 90; G2 60–89; G3a 45–59; G3b 30–44; G4 15–29; G5 &lt; 15).",
+    "tips": [
+      "Oriente a coleta: desprezar a 1ª urina da manhã, anotar o horário e juntar todas as micções até a 1ª urina do dia seguinte, inclusive.",
+      "A secreção tubular de creatinina faz o clearance <strong>superestimar</strong> a TFG real, tanto mais quanto menor a função renal.",
+      "Use quando a equação é pouco confiável: amputados, paraplégicos, sarcopenia grave, fisiculturistas, dieta vegetariana ou suplemento de creatina.",
+      "Cimetidina e trimetoprima bloqueiam a secreção tubular de creatinina e alteram o resultado.",
+      "Para dose de medicamentos que usam Cockcroft-Gault na bula, veja o clearance estimado."
+    ],
+    "sources": [
+      [
+        "Levey AS, Inker LA. Assessment of glomerular filtration rate in health and disease: a state of the art review. Clin Pharmacol Ther, 2017.",
+        "https://doi.org/10.1002/cpt.729"
+      ],
+      [
+        "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int, 2024.",
+        "https://doi.org/10.1016/j.kint.2023.10.018"
+      ]
+    ],
+    "cases": [
+      [
+        "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        {
+          "ucr": 100,
+          "vol": 1440,
+          "pcr": 1,
+          "sexo": "M",
+          "peso": 70,
+          "altura": 170
+        },
+        {
+          "raw": {
+            "cl": 100,
+            "clc": 95.153,
+            "exc": 20.571
+          },
+          "main": "95",
+          "level": "low",
+          "tol": 0.01
+        }
+      ],
+      [
+        "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        {
+          "ucr": 80,
+          "vol": 1500,
+          "pcr": 1.5,
+          "sexo": "F"
+        },
+        {
+          "raw": {
+            "cl": 55.556
+          },
+          "level": "mid",
+          "verdict": "G3a",
+          "tol": 0.01
+        }
+      ],
+      [
+        "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        {
+          "ucr": 60,
+          "vol": 1000,
+          "pcr": 2,
+          "sexo": "M"
+        },
+        {
+          "raw": {
+            "cl": 20.833
+          },
+          "level": "high",
+          "verdict": "G4",
+          "tol": 0.01
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}
