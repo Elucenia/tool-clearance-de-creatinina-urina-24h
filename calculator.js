@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-clearance-de-creatinina-urina-24h · Elucenia · https://github.com/Elucenia/tool-clearance-de-creatinina-urina-24h
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"clearance-de-creatinina-urina-24h","title":"Clearance de creatinina em urina de 24 h","fields":[["ucr","Creatinina urinária","num",{"min":5,"max":500,"step":0.1,"unit":"mg/dL","ph":"100"}],["vol","Volume urinário de 24 h","num",{"min":100,"max":10000,"unit":"mL","ph":"1440"}],["pcr","Creatinina sérica","num",{"min":0.2,"max":20,"step":0.01,"unit":"mg/dL","ph":"1,0"}],["sexo","Sexo","radio",{"opts":{"F":"Feminino","M":"Masculino"}}],["peso","Peso (para correção e checagem da coleta)","num",{"min":20,"max":300,"step":0.1,"unit":"kg","ph":"70","opt":true}],["altura","Altura (para correção por 1,73 m²)","num",{"min":100,"max":230,"unit":"cm","ph":"170","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
