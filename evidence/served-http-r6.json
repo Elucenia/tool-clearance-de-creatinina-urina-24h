@@ -1,0 +1,746 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "clearance-de-creatinina-urina-24h",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/clearance-de-creatinina-urina-24h/calculator.js",
+    "sha256": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083",
+    "bytes": 5939
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "clearance-de-creatinina-urina-24h",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+      "originalInput": {
+        "ucr": 100,
+        "vol": 1440,
+        "pcr": 1,
+        "sexo": "M",
+        "peso": 70,
+        "altura": 170
+      },
+      "input": {
+        "ucr": 100,
+        "vol": 1440,
+        "pcr": 1,
+        "sexo": "M",
+        "peso": 70,
+        "altura": 170
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "cl": 100,
+          "clc": 95.153,
+          "exc": 20.571
+        },
+        "main": "95",
+        "level": "low",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "95",
+          "mL/min/1,73 m²"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "raw": {
+          "cl": 100,
+          "clc": 95.15330399152833,
+          "exc": 20.571428571428573
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/clearance-de-creatinina-urina-24h/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ucr": 100,
+            "vol": 1440,
+            "pcr": 1,
+            "sexo": "M",
+            "peso": 70,
+            "altura": 170
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/clearance-de-creatinina-urina-24h/calculate",
+          "startedAt": "2026-10-05T17:36:14.726Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "clearance-de-creatinina-urina-24h",
+              "main": [
+                "95",
+                "mL/min/1,73 m²"
+              ],
+              "label": "Clearance de creatinina (urina de 24 h)",
+              "raw": {
+                "cl": 100,
+                "clc": 95.15330399152833,
+                "exc": 20.571428571428573
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "f2db022d81e22dd588af516d257cc15b83f07ded2818365057c2d531104f2df1",
+          "bytes": 238,
+          "elapsedMs": 6.124900000002526
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/clearance-de-creatinina-urina-24h/calculate",
+        "startedAt": "2026-10-05T17:36:14.726Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "clearance-de-creatinina-urina-24h",
+            "main": [
+              "95",
+              "mL/min/1,73 m²"
+            ],
+            "label": "Clearance de creatinina (urina de 24 h)",
+            "raw": {
+              "cl": 100,
+              "clc": 95.15330399152833,
+              "exc": 20.571428571428573
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "f2db022d81e22dd588af516d257cc15b83f07ded2818365057c2d531104f2df1",
+        "bytes": 238,
+        "elapsedMs": 6.124900000002526
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "95",
+            "obtained": "95",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.cl",
+            "expected": 100,
+            "obtained": 100,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.clc",
+            "expected": 95.153,
+            "obtained": 95.15330399152833,
+            "tolerance": 0.01,
+            "difference": 0.00030399152832671916,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.exc",
+            "expected": 20.571,
+            "obtained": 20.571428571428573,
+            "tolerance": 0.01,
+            "difference": 0.0004285714285714448,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cl",
+            "expected": 100,
+            "obtained": 100,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.clc",
+            "expected": 95.15330399152833,
+            "obtained": 95.15330399152833,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exc",
+            "expected": 20.571428571428573,
+            "obtained": 20.571428571428573,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "95",
+            "obtained": "95",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mL/min/1,73 m²",
+            "obtained": "mL/min/1,73 m²",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "clearance-de-creatinina-urina-24h",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+      "originalInput": {
+        "ucr": 80,
+        "vol": 1500,
+        "pcr": 1.5,
+        "sexo": "F"
+      },
+      "input": {
+        "ucr": 80,
+        "vol": 1500,
+        "pcr": 1.5,
+        "sexo": "F"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "cl": 55.556
+        },
+        "level": "mid",
+        "verdict": "G3a",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "56",
+          "mL/min"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "raw": {
+          "cl": 55.55555555555556,
+          "clc": null,
+          "exc": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/clearance-de-creatinina-urina-24h/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ucr": 80,
+            "vol": 1500,
+            "pcr": 1.5,
+            "sexo": "F"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/clearance-de-creatinina-urina-24h/calculate",
+          "startedAt": "2026-10-05T17:36:15.037Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "clearance-de-creatinina-urina-24h",
+              "main": [
+                "56",
+                "mL/min"
+              ],
+              "label": "Clearance de creatinina (urina de 24 h)",
+              "raw": {
+                "cl": 55.55555555555556,
+                "clc": null,
+                "exc": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "4e511abec7a7d4b3d347efbb09987620a21f8f76b097aa11914b13524ef5fd63",
+          "bytes": 216,
+          "elapsedMs": 3.5429000000003725
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/clearance-de-creatinina-urina-24h/calculate",
+        "startedAt": "2026-10-05T17:36:15.037Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "clearance-de-creatinina-urina-24h",
+            "main": [
+              "56",
+              "mL/min"
+            ],
+            "label": "Clearance de creatinina (urina de 24 h)",
+            "raw": {
+              "cl": 55.55555555555556,
+              "clc": null,
+              "exc": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "4e511abec7a7d4b3d347efbb09987620a21f8f76b097aa11914b13524ef5fd63",
+        "bytes": 216,
+        "elapsedMs": 3.5429000000003725
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cl",
+            "expected": 55.556,
+            "obtained": 55.55555555555556,
+            "tolerance": 0.01,
+            "difference": 0.00044444444444025066,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cl",
+            "expected": 55.55555555555556,
+            "obtained": 55.55555555555556,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.clc",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exc",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "56",
+            "obtained": "56",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mL/min",
+            "obtained": "mL/min",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "clearance-de-creatinina-urina-24h",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+      "originalInput": {
+        "ucr": 60,
+        "vol": 1000,
+        "pcr": 2,
+        "sexo": "M"
+      },
+      "input": {
+        "ucr": 60,
+        "vol": 1000,
+        "pcr": 2,
+        "sexo": "M"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "cl": 20.833
+        },
+        "level": "high",
+        "verdict": "G4",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "21",
+          "mL/min"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "raw": {
+          "cl": 20.833333333333332,
+          "clc": null,
+          "exc": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/clearance-de-creatinina-urina-24h/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ucr": 60,
+            "vol": 1000,
+            "pcr": 2,
+            "sexo": "M"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/clearance-de-creatinina-urina-24h/calculate",
+          "startedAt": "2026-10-05T17:36:15.347Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "clearance-de-creatinina-urina-24h",
+              "main": [
+                "21",
+                "mL/min"
+              ],
+              "label": "Clearance de creatinina (urina de 24 h)",
+              "raw": {
+                "cl": 20.833333333333332,
+                "clc": null,
+                "exc": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "f26cffb7065a438d940762e082263260863d7b95684bf5d8bca15373f3ee2c61",
+          "bytes": 217,
+          "elapsedMs": 3.024600000000646
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/clearance-de-creatinina-urina-24h/calculate",
+        "startedAt": "2026-10-05T17:36:15.347Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "clearance-de-creatinina-urina-24h",
+            "main": [
+              "21",
+              "mL/min"
+            ],
+            "label": "Clearance de creatinina (urina de 24 h)",
+            "raw": {
+              "cl": 20.833333333333332,
+              "clc": null,
+              "exc": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "f26cffb7065a438d940762e082263260863d7b95684bf5d8bca15373f3ee2c61",
+        "bytes": 217,
+        "elapsedMs": 3.024600000000646
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cl",
+            "expected": 20.833,
+            "obtained": 20.833333333333332,
+            "tolerance": 0.01,
+            "difference": 0.0003333333333337407,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cl",
+            "expected": 20.833333333333332,
+            "obtained": 20.833333333333332,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.clc",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exc",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "21",
+            "obtained": "21",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mL/min",
+            "obtained": "mL/min",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
