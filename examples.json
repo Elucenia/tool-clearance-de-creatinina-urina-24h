@@ -1,6 +1,17 @@
 [
   {
-    "label": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+    "id": "clearance-de-creatinina-urina-24h",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+    "originalInput": {
+      "ucr": 100,
+      "vol": 1440,
+      "pcr": 1,
+      "sexo": "M",
+      "peso": 70,
+      "altura": 170
+    },
     "input": {
       "ucr": 100,
       "vol": 1440,
@@ -19,18 +30,38 @@
       "level": "low",
       "tol": 0.01
     },
-    "originalInput": {
-      "ucr": 100,
-      "vol": 1440,
-      "pcr": 1,
-      "sexo": "M",
-      "peso": 70,
-      "altura": 170
+    "recordedResult": {
+      "main": [
+        "95",
+        "mL/min/1,73 m²"
+      ],
+      "label": "Clearance de creatinina (urina de 24 h)",
+      "raw": {
+        "cl": 100,
+        "clc": 95.15330399152833,
+        "exc": 20.571428571428573
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+    "id": "clearance-de-creatinina-urina-24h",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+    "originalInput": {
+      "ucr": 80,
+      "vol": 1500,
+      "pcr": 1.5,
+      "sexo": "F"
+    },
     "input": {
       "ucr": 80,
       "vol": 1500,
@@ -45,16 +76,38 @@
       "verdict": "G3a",
       "tol": 0.01
     },
-    "originalInput": {
-      "ucr": 80,
-      "vol": 1500,
-      "pcr": 1.5,
-      "sexo": "F"
+    "recordedResult": {
+      "main": [
+        "56",
+        "mL/min"
+      ],
+      "label": "Clearance de creatinina (urina de 24 h)",
+      "raw": {
+        "cl": 55.55555555555556,
+        "clc": null,
+        "exc": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+    "id": "clearance-de-creatinina-urina-24h",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+    "originalInput": {
+      "ucr": 60,
+      "vol": 1000,
+      "pcr": 2,
+      "sexo": "M"
+    },
     "input": {
       "ucr": 60,
       "vol": 1000,
@@ -69,12 +122,25 @@
       "verdict": "G4",
       "tol": 0.01
     },
-    "originalInput": {
-      "ucr": 60,
-      "vol": 1000,
-      "pcr": 2,
-      "sexo": "M"
+    "recordedResult": {
+      "main": [
+        "21",
+        "mL/min"
+      ],
+      "label": "Clearance de creatinina (urina de 24 h)",
+      "raw": {
+        "cl": 20.833333333333332,
+        "clc": null,
+        "exc": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

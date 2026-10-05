@@ -5,6 +5,7 @@
     "short": "Função renal medida, com checagem da coleta",
     "desc": "Calcule o clearance de creatinina medido na urina de 24 horas, com correção para 1,73 m² e checagem da adequação da coleta pela creatinina excretada.",
     "lead": "Mede o clearance de creatinina a partir da urina de 24 horas e da creatinina sérica. Útil quando a TFG estimada é pouco confiável, como em extremos de massa muscular, amputações ou dietas especiais.",
+    "kind": "Calculadora",
     "spec": [
       "nefrologia",
       "clinica-medica",
@@ -84,36 +85,6 @@
       ]
     ],
     "formula": "<p>ClCr (mL/min) = (creatinina urinária × volume de 24 h em mL) ÷ (creatinina sérica × 1.440).</p><p>Corrigido = ClCr × 1,73 ÷ superfície corporal (Mosteller). Creatinina excretada (mg/kg/dia) = creatinina urinária × volume (dL) ÷ peso.</p>",
-    "table": [
-      [
-        "Creatinina excretada",
-        "Coleta"
-      ],
-      [
-        "Homens 20 a 25 mg/kg/dia",
-        "Compatível com coleta completa"
-      ],
-      [
-        "Mulheres 15 a 20 mg/kg/dia",
-        "Compatível com coleta completa"
-      ],
-      [
-        "Abaixo do esperado",
-        "Coleta incompleta ou massa muscular baixa"
-      ],
-      [
-        "Acima do esperado",
-        "Coleta de mais de 24 h ou erro de volume"
-      ]
-    ],
-    "table_note": "O resultado é classificado nas categorias de TFG da KDIGO (G1 ≥ 90; G2 60–89; G3a 45–59; G3b 30–44; G4 15–29; G5 &lt; 15).",
-    "tips": [
-      "Oriente a coleta: desprezar a 1ª urina da manhã, anotar o horário e juntar todas as micções até a 1ª urina do dia seguinte, inclusive.",
-      "A secreção tubular de creatinina faz o clearance <strong>superestimar</strong> a TFG real, tanto mais quanto menor a função renal.",
-      "Use quando a equação é pouco confiável: amputados, paraplégicos, sarcopenia grave, fisiculturistas, dieta vegetariana ou suplemento de creatina.",
-      "Cimetidina e trimetoprima bloqueiam a secreção tubular de creatinina e alteram o resultado.",
-      "Para dose de medicamentos que usam Cockcroft-Gault na bula, veja o clearance estimado."
-    ],
     "sources": [
       [
         "Levey AS, Inker LA. Assessment of glomerular filtration rate in health and disease: a state of the art review. Clin Pharmacol Ther, 2017.",
@@ -122,6 +93,10 @@
       [
         "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int, 2024.",
         "https://doi.org/10.1016/j.kint.2023.10.018"
+      ],
+      [
+        "KDIGO2024",
+        "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf"
       ]
     ],
     "cases": [
@@ -181,9 +156,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -192,17 +164,189 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T17:15:29.797Z",
+      "total": 2,
+      "passed": 2,
+      "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+      "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Clearance urinário 24 h:UCr×volume/(PCr×1440); indexação 1,73/SCMosteller",
+    "implementationVersion": "clearance-de-creatinina-urina-24h@native-2026-10-03+f5e6a12acf90",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/28474735/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "ClCr (mL/min) = (creatinina urinária × volume de 24 h em mL) ÷ (creatinina sérica × 1.440). Corrigido = ClCr × 1,73 ÷ superfície corporal (Mosteller). Creatinina excretada (mg/kg/dia) = creatinina urinária × volume (dL) ÷ peso.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "ucr",
+            "label": "Creatinina urinária",
+            "type": "num",
+            "min": 5,
+            "max": 500,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "vol",
+            "label": "Volume urinário de 24 h",
+            "type": "num",
+            "min": 100,
+            "max": 10000,
+            "unit": "mL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pcr",
+            "label": "Creatinina sérica",
+            "type": "num",
+            "min": 0.2,
+            "max": 20,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sexo",
+            "label": "Sexo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "F": "Feminino",
+              "M": "Masculino"
+            }
+          },
+          {
+            "key": "peso",
+            "label": "Peso (para correção e checagem da coleta)",
+            "type": "num",
+            "min": 20,
+            "max": 300,
+            "unit": "kg",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "altura",
+            "label": "Altura (para correção por 1,73 m²)",
+            "type": "num",
+            "min": 100,
+            "max": 230,
+            "unit": "cm",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "32cef43cd81059f6492a4bc431bb3077adac1a693f67f027d5f78296b07edf70"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Levey AS, Inker LA. Assessment of glomerular filtration rate in health and disease: a state of the art review. Clin Pharmacol Ther, 2017.",
+          "url": "https://doi.org/10.1002/cpt.729",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Assessment of Glomerular Filtration Rate in Health and Disease: A State of the Art Review.",
+            "year": "2017",
+            "firstPublicationDate": "2017-06-05",
+            "doi": "10.1002/cpt.729",
+            "pmid": "28474735",
+            "journal": "Clinical pharmacology and therapeutics",
+            "authors": "Levey AS, Inker LA."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/28474735/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "d2392eb8ffe87e053c14b4f1b14f8c201e543d3feef1ce61f0d20fa301afc660",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int, 2024.",
+          "url": "https://doi.org/10.1016/j.kint.2023.10.018",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease.",
+            "year": "2024",
+            "firstPublicationDate": "2024-04-01",
+            "doi": "10.1016/j.kint.2023.10.018",
+            "pmid": "38490803",
+            "journal": "Kidney international",
+            "authors": "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/38490803/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T17:15:29.797Z",
+        "total": 2,
+        "passed": 2,
+        "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+        "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "f5699d87bb9574fc2ab1052ee6a9cb0d9893542f1b1143ed79077d94434b56cf",
+          "meaning": "Reference to the already recorded per-tool evidence; no new test or approval is created by this synchronization."
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083"
+    },
+    "limits": "Esta conta exige coleta completa de urina de 24 horas e creatinina urinária e sérica em unidades compatíveis. O volume é convertido para mL/min dividindo por 1440 minutos. Coleta incompleta ou excessiva pode distorcer o resultado; a KDIGO 2024 destaca esses erros. Clearance de creatinina não é uma medida direta da taxa de filtração glomerular. O valor absoluto em mL/min é distinto do valor opcional indexado para 1,73 m²; informe altura e peso para essa indexação e confira qual unidade o protocolo exige.",
+    "limitsEvidence": {
+      "status": "inherited-primary-guideline-named-sections-and-local-contract-read",
+      "sources": [
+        {
+          "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+          "edition": "KDIGO2024",
+          "readScope": "Inherited Western primary reading: PracticePoint1.2.2.8, printedpS178/Table7 and timed urine clearance discussion printedp67; source handoff identified, not a new full-guideline reading by this agent.",
+          "inheritedEvidence": "remaining46-verify-source-handoff-final23.json"
+        }
+      ],
+      "populationScope": "Timed urinary creatinine clearance; collection quality and tubular secretion differ from measured GFR.",
+      "remainingChecks": [
+        "KDIGO named sections inherited, not independently read in full.",
+        "No supervised patient collection, measured-GFR comparison or medication-specific dosing validation."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/clearance-de-creatinina-urina-24h/calculator.js",
+    "bytes": 5939,
+    "sha256": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "b0368b3f5cb64f8cca79834031a3bb9c001833affeb06e2595ce669a8b9775d6",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "2ac46c9915ab0985d6ca0b19a2a11cf88b25b041b8ed33394d2d5fe1da19e664",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

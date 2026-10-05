@@ -1,0 +1,352 @@
+{
+  "id": "clearance-de-creatinina-urina-24h",
+  "at": "2026-10-05T17:29:12.622Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/clearance-de-creatinina-urina-24h/calculator.js",
+    "bytes": 5939,
+    "sha256": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083"
+  },
+  "cases": [
+    {
+      "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+      "input": {
+        "ucr": 100,
+        "vol": 1440,
+        "pcr": 1,
+        "sexo": "M",
+        "peso": 70,
+        "altura": 170
+      },
+      "obtained": {
+        "id": "clearance-de-creatinina-urina-24h",
+        "main": [
+          "95",
+          "mL/min/1,73 m²"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "raw": {
+          "cl": 100,
+          "clc": 95.15330399152833,
+          "exc": 20.571428571428573
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "95",
+          "obtained": "95",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.cl",
+          "expected": 100,
+          "obtained": 100,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.clc",
+          "expected": 95.153,
+          "obtained": 95.15330399152833,
+          "tolerance": 0.01,
+          "difference": 0.00030399152832671916,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.exc",
+          "expected": 20.571,
+          "obtained": 20.571428571428573,
+          "tolerance": 0.01,
+          "difference": 0.0004285714285714448,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cl",
+          "expected": 100,
+          "obtained": 100,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.clc",
+          "expected": 95.15330399152833,
+          "obtained": 95.15330399152833,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.exc",
+          "expected": 20.571428571428573,
+          "obtained": 20.571428571428573,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "95",
+          "obtained": "95",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL/min/1,73 m²",
+          "obtained": "mL/min/1,73 m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+      "input": {
+        "ucr": 80,
+        "vol": 1500,
+        "pcr": 1.5,
+        "sexo": "F"
+      },
+      "obtained": {
+        "id": "clearance-de-creatinina-urina-24h",
+        "main": [
+          "56",
+          "mL/min"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "raw": {
+          "cl": 55.55555555555556,
+          "clc": null,
+          "exc": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cl",
+          "expected": 55.556,
+          "obtained": 55.55555555555556,
+          "tolerance": 0.01,
+          "difference": 0.00044444444444025066,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cl",
+          "expected": 55.55555555555556,
+          "obtained": 55.55555555555556,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.clc",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.exc",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "56",
+          "obtained": "56",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL/min",
+          "obtained": "mL/min",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+      "input": {
+        "ucr": 60,
+        "vol": 1000,
+        "pcr": 2,
+        "sexo": "M"
+      },
+      "obtained": {
+        "id": "clearance-de-creatinina-urina-24h",
+        "main": [
+          "21",
+          "mL/min"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "raw": {
+          "cl": 20.833333333333332,
+          "clc": null,
+          "exc": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cl",
+          "expected": 20.833,
+          "obtained": 20.833333333333332,
+          "tolerance": 0.01,
+          "difference": 0.0003333333333337407,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cl",
+          "expected": 20.833333333333332,
+          "obtained": 20.833333333333332,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.clc",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.exc",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "21",
+          "obtained": "21",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL/min",
+          "obtained": "mL/min",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 53,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
