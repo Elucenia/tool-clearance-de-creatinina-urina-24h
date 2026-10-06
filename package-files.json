@@ -1,6 +1,6 @@
 {
   "id": "clearance-de-creatinina-urina-24h",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5939,
-      "sha256": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083"
+      "bytes": 6144,
+      "sha256": "ef5508500e4cc76da905457a29102888bad2f1bcf64e7d26368fd421ecd59f63"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1131,
-      "sha256": "8593a581d16ac1d46971fba839652519c99851af870ba19271ac757df14a8161"
+      "bytes": 1400,
+      "sha256": "b3e9dea79fa1ac8a9eaf3ebdf9bb4fc4e79acc63f1ea87adb07985f8d2174193"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4739,
-      "sha256": "91ce45e423c6d6b03e4eae6c33e2edbd745be7e195b791075ae5999d8dfccd70"
+      "bytes": 5717,
+      "sha256": "536f07281192cfceebe35d12a86c65149ab877e8663b822230ddc6ca28f4e2e9"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3963,
-      "sha256": "021284ba7244fa643ffa170146b31274f0446d8fc0a391e3f17a903d36c34a66"
+      "bytes": 4718,
+      "sha256": "5049f847ac679019680a1f19a1103f9f560311260188cf3b164d31461d9fb58e"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3497,
-      "sha256": "744c2ab57e22b5dfc7514555e93125861ce57115a81eaad14c580777635e59b5"
+      "bytes": 4205,
+      "sha256": "2b379a991076c4be0337f89f3e4fb63a9a2effd8cfaf8eab875a21857d62d7f1"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3854,
-      "sha256": "3936c82c93f6f845c389ddc621bba5815265abe1f942a0bb3f2db27e19906b05"
+      "bytes": 4619,
+      "sha256": "de9f1b9fbfa051b1e2cca9b67f8746303fc391268d9def484604b5944eb425a8"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 4003,
-      "sha256": "6480b1d85a6699e08cd64187f050a2ff23448f662e67efdfd05b8a5034b006a1"
+      "bytes": 4791,
+      "sha256": "e7926aee6bc189f3d4e9a962cb5472ee2d86d46ce92cf18267c123a14e24eaaf"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6568,
-      "sha256": "0aa49b96f67a663115616450736ebab52e548459d6423c8499ed01ef03835b5b"
+      "bytes": 7959,
+      "sha256": "d3bd3a32bf8926cf900a58843046315b7ff2a57f32bd87a7f3b09a8d78bf9ebf"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3835,
-      "sha256": "1308cbc6bef0ef5bdbed7dd541f411157d7e9b2c1399aafc9a87bfb34a31a7fc"
+      "bytes": 4593,
+      "sha256": "b137ae86b637110b1cc57149ea8dc5214641307a857a85859291f722109bfb35"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3969,
-      "sha256": "a4efb16a35b0bbbcc2157001c50c4dfb72dbe9aa47a91050f42f631ef9910264"
+      "bytes": 4757,
+      "sha256": "ea62268918689260b43b65dd95a1f35d3eff5bdc5b40c615c59355c855861a20"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3635,
-      "sha256": "87f7a57513bfb32a3385dd74756d7983e1a75f40b77cb06c5fc8ae29741ea1c2"
+      "bytes": 4383,
+      "sha256": "701891edb9e9c6526b53cabec9e90b9fb11c1b45d5a9ecde4be2ce4043d3ba38"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3122,
-      "sha256": "8017d204dfe1d291bf1bc864a8db647c1a6d4e19693a3a6aec3088813f114513"
+      "bytes": 3748,
+      "sha256": "7417bb27e18009903753dc02b0b2592554dd912ba63527abd2a6dce59e1e5635"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 39763,
+      "sha256": "2657f732ace0a116d3cd66f88d53eacf3bd953a8aa9fec28fbfaef707496e543"
     },
     {
       "path": "engine/tool-code/clearance-de-creatinina-urina-24h/calculator.js",
-      "bytes": 5939,
-      "sha256": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083"
+      "bytes": 6144,
+      "sha256": "ef5508500e4cc76da905457a29102888bad2f1bcf64e7d26368fd421ecd59f63"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2843,
       "sha256": "47ddb5098c40982a40124cb2d9016deae94da50b3dc85e3e28cab3b3b79e5e91"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12240,
+      "sha256": "786b9ab4dfe7402fea9ed8c6df66dd488c9d502ca68679d30cc7948355fff16e"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 50533,
-      "sha256": "1945f2f3548c67715404b12a30603d09580a6b7f16146e96adf947088eec410d"
+      "bytes": 79221,
+      "sha256": "6ea06c295caf770bb14042c664028e4ccec46e34b9faa148419c3d63f971cfff"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 409,
-      "sha256": "1615e2b35831f98e7247b18cd4738898543b36af52ee9ae9c583b5fab7939f93"
+      "bytes": 503,
+      "sha256": "930d1841540f39c64f8fa289d3ebc99e558e4e0e29a40cd220f546f7afbd555b"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12240,
-      "sha256": "786b9ab4dfe7402fea9ed8c6df66dd488c9d502ca68679d30cc7948355fff16e"
+      "bytes": 6426,
+      "sha256": "484de47959a3d2d0c37c45da65ecebf455157d0d7fe987bf42e7665be88775c6"
     },
     {
       "path": "README.md",
-      "bytes": 3290,
-      "sha256": "f5e0264a9a125d4160479ff9174d77b47e17230bdd42c2ee58b93d58f0c48f82"
+      "bytes": 3889,
+      "sha256": "17feb43834b3b499a0e9db93f5c9736d375667b23cf109a5e6e88ec4ac79f646"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 6110,
+      "sha256": "319be025dd5e7aad705d9c68e3fee067e260532a24f01bc0c3599cb8b24c887c"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1854,
       "sha256": "9f04f269f98b1379cb23e712ecb43059a80846bd7e81046b13b390b316cc9acb"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 13037,
-      "sha256": "fccc87b80866dedd695e718f131dff59499c66964d0ca585611275a1736aa125"
+      "bytes": 14569,
+      "sha256": "f4e45fbed91e7d5b30db6f19391d1018a0143fadccd14caa67e34b723aea4eec"
     }
   ]
 }

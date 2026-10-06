@@ -1,0 +1,226 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "clearance-de-creatinina-urina-24h",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "4aebf015adf300e88f986c71a320252a545ac6e8",
+    "oldEngineSha256": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083",
+    "currentEngineSha256": "ef5508500e4cc76da905457a29102888bad2f1bcf64e7d26368fd421ecd59f63"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+      "input": {
+        "ucr": 100,
+        "vol": 1440,
+        "pcr": 1,
+        "sexo": "M",
+        "peso": 70,
+        "altura": 170
+      },
+      "publicOutput": {
+        "id": "clearance-de-creatinina-urina-24h",
+        "main": [
+          "95",
+          "mL/min/1,73 m²"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "raw": {
+          "cl": 100,
+          "clc": 95.15330399152833,
+          "exc": 20.571428571428573
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cl": 100,
+          "clc": 95.153,
+          "exc": 20.571
+        },
+        "main": "95",
+        "level": "low",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "95",
+          "mL/min/1,73 m²"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "level": "low",
+        "verdict": "Faixa G1 da KDIGO: função normal ou alta",
+        "rows": [
+          [
+            "Clearance medido (sem correção)",
+            "100 mL/min"
+          ],
+          [
+            "Corrigido para 1,73 m² (SC 1,82 m²)",
+            "95 mL/min/1,73 m²"
+          ],
+          [
+            "Creatinina excretada",
+            "20,6 mg/kg/dia (esperado 20 a 25)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "cl": 100,
+          "clc": 95.15330399152833,
+          "exc": 20.571428571428573
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+      "input": {
+        "ucr": 80,
+        "vol": 1500,
+        "pcr": 1.5,
+        "sexo": "F"
+      },
+      "publicOutput": {
+        "id": "clearance-de-creatinina-urina-24h",
+        "main": [
+          "56",
+          "mL/min"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "raw": {
+          "cl": 55.55555555555556,
+          "clc": null,
+          "exc": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cl": 55.556
+        },
+        "level": "mid",
+        "verdict": "G3a",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "56",
+          "mL/min"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "level": "mid",
+        "verdict": "Faixa G3a da KDIGO: função leve a moderadamente diminuída",
+        "rows": [
+          [
+            "Clearance medido (sem correção)",
+            "56 mL/min"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "cl": 55.55555555555556,
+          "clc": null,
+          "exc": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+      "input": {
+        "ucr": 60,
+        "vol": 1000,
+        "pcr": 2,
+        "sexo": "M"
+      },
+      "publicOutput": {
+        "id": "clearance-de-creatinina-urina-24h",
+        "main": [
+          "21",
+          "mL/min"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "raw": {
+          "cl": 20.833333333333332,
+          "clc": null,
+          "exc": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cl": 20.833
+        },
+        "level": "high",
+        "verdict": "G4",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "21",
+          "mL/min"
+        ],
+        "label": "Clearance de creatinina (urina de 24 h)",
+        "level": "high",
+        "verdict": "Faixa G4 da KDIGO: função gravemente diminuída",
+        "rows": [
+          [
+            "Clearance medido (sem correção)",
+            "21 mL/min"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "cl": 20.833333333333332,
+          "clc": null,
+          "exc": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

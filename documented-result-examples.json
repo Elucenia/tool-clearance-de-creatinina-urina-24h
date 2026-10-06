@@ -1,0 +1,1247 @@
+{
+  "id": "clearance-de-creatinina-urina-24h",
+  "implementationVersion": "clearance-de-creatinina-urina-24h@native-2026-10-05+ef5508500e4c",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clearance medido (sem correção)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "100 mL/min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Corrigido para 1,73 m² (SC 1,82 m²)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "95 mL/min/1,73 m²",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Creatinina excretada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "20,6 mg/kg/dia (esperado 20 a 25)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Faixa G1 da KDIGO: função normal ou alta",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clearance medido (sem correção)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "56 mL/min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Faixa G3a da KDIGO: função leve a moderadamente diminuída",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clearance medido (sem correção)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "21 mL/min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Faixa G4 da KDIGO: função gravemente diminuída",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Measured clearance (uncorrected)",
+                "locale": "en",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "100 mL/min",
+                "locale": "en",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Corrected to 1,73 m² (SC 1.82 m²)",
+                "locale": "en",
+                "template": "documented-authored-415279688771a761c3e0",
+                "sourceNumbers": [
+                  1.82
+                ]
+              },
+              "value": {
+                "text": "95 mL/min/1,73 m²",
+                "locale": "en",
+                "template": "documented-authored-3a7569e13eb70f65c035",
+                "sourceNumbers": [
+                  95
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Excreted creatinine",
+                "locale": "en",
+                "template": "documented-authored-d93f6c438becd0134a51"
+              },
+              "value": {
+                "text": "20.6 mg/kg/day (expected 20 to 25)",
+                "locale": "en",
+                "template": "documented-authored-5b305e853b83e44b8cfe",
+                "sourceNumbers": [
+                  20.6,
+                  20,
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G1 range: normal or high function",
+            "locale": "en",
+            "template": "documented-authored-8815b5c197eb2c1d403f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Measured clearance (uncorrected)",
+                "locale": "en",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "56 mL/min",
+                "locale": "en",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G3a range: mildly to moderately decreased function",
+            "locale": "en",
+            "template": "documented-authored-006891837324d33ba940"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Measured clearance (uncorrected)",
+                "locale": "en",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "21 mL/min",
+                "locale": "en",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  21
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G4 range: severely decreased kidney function",
+            "locale": "en",
+            "template": "documented-authored-17265c89bb524fc7c255"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clearance medido (sin corrección)",
+                "locale": "es",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "100 mL/min",
+                "locale": "es",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Corregido para 1,73 m² (SC 1,82 m²)",
+                "locale": "es",
+                "template": "documented-authored-415279688771a761c3e0",
+                "sourceNumbers": [
+                  1.82
+                ]
+              },
+              "value": {
+                "text": "95 mL/min/1,73 m²",
+                "locale": "es",
+                "template": "documented-authored-3a7569e13eb70f65c035",
+                "sourceNumbers": [
+                  95
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Creatinina excretada",
+                "locale": "es",
+                "template": "documented-authored-d93f6c438becd0134a51"
+              },
+              "value": {
+                "text": "20,6 mg/kg/día (esperado 20 a 25)",
+                "locale": "es",
+                "template": "documented-authored-5b305e853b83e44b8cfe",
+                "sourceNumbers": [
+                  20.6,
+                  20,
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rango G1 de KDIGO: función normal o alta",
+            "locale": "es",
+            "template": "documented-authored-8815b5c197eb2c1d403f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clearance medido (sin corrección)",
+                "locale": "es",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "56 mL/min",
+                "locale": "es",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rango G3a de KDIGO: función levemente a moderadamente disminuida",
+            "locale": "es",
+            "template": "documented-authored-006891837324d33ba940"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clearance medido (sin corrección)",
+                "locale": "es",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "21 mL/min",
+                "locale": "es",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  21
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rango G4 de KDIGO: función gravemente disminuida",
+            "locale": "es",
+            "template": "documented-authored-17265c89bb524fc7c255"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clairance mesurée (non corrigée)",
+                "locale": "fr",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "100 mL/min",
+                "locale": "fr",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Corrigé pour 1,73 m² (SC 1,82 m²)",
+                "locale": "fr",
+                "template": "documented-authored-415279688771a761c3e0",
+                "sourceNumbers": [
+                  1.82
+                ]
+              },
+              "value": {
+                "text": "95 mL/min/1,73 m²",
+                "locale": "fr",
+                "template": "documented-authored-3a7569e13eb70f65c035",
+                "sourceNumbers": [
+                  95
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Créatinine excrétée",
+                "locale": "fr",
+                "template": "documented-authored-d93f6c438becd0134a51"
+              },
+              "value": {
+                "text": "20,6 mg/kg/jour (attendu 20 à 25)",
+                "locale": "fr",
+                "template": "documented-authored-5b305e853b83e44b8cfe",
+                "sourceNumbers": [
+                  20.6,
+                  20,
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Plage KDIGO G1 : fonction normale ou élevée",
+            "locale": "fr",
+            "template": "documented-authored-8815b5c197eb2c1d403f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clairance mesurée (non corrigée)",
+                "locale": "fr",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "56 mL/min",
+                "locale": "fr",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Plage KDIGO G3a : fonction légèrement à modérément diminuée",
+            "locale": "fr",
+            "template": "documented-authored-006891837324d33ba940"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clairance mesurée (non corrigée)",
+                "locale": "fr",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "21 mL/min",
+                "locale": "fr",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  21
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Plage G4 de KDIGO : fonction gravement diminuée",
+            "locale": "fr",
+            "template": "documented-authored-17265c89bb524fc7c255"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gemessene Clearance (unkorrigiert)",
+                "locale": "de",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "100 mL/min",
+                "locale": "de",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Korrigiert auf 1,73 m² (SC 1,82 m²)",
+                "locale": "de",
+                "template": "documented-authored-415279688771a761c3e0",
+                "sourceNumbers": [
+                  1.82
+                ]
+              },
+              "value": {
+                "text": "95 mL/min/1,73 m²",
+                "locale": "de",
+                "template": "documented-authored-3a7569e13eb70f65c035",
+                "sourceNumbers": [
+                  95
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Ausgeschiedenes Kreatinin",
+                "locale": "de",
+                "template": "documented-authored-d93f6c438becd0134a51"
+              },
+              "value": {
+                "text": "20,6 mg/kg/Tag (erwartet 20 bis 25)",
+                "locale": "de",
+                "template": "documented-authored-5b305e853b83e44b8cfe",
+                "sourceNumbers": [
+                  20.6,
+                  20,
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO-G1-Bereich: normale oder hohe Funktion",
+            "locale": "de",
+            "template": "documented-authored-8815b5c197eb2c1d403f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gemessene Clearance (unkorrigiert)",
+                "locale": "de",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "56 mL/min",
+                "locale": "de",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO-G3a-Bereich: leicht bis mäßig verminderte Funktion",
+            "locale": "de",
+            "template": "documented-authored-006891837324d33ba940"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gemessene Clearance (unkorrigiert)",
+                "locale": "de",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "21 mL/min",
+                "locale": "de",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  21
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G4-Bereich: stark eingeschränkte Nierenfunktion",
+            "locale": "de",
+            "template": "documented-authored-17265c89bb524fc7c255"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clearance misurata (non corretta)",
+                "locale": "it",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "100 mL/min",
+                "locale": "it",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Corretto per 1,73 m² (SC 1,82 m²)",
+                "locale": "it",
+                "template": "documented-authored-415279688771a761c3e0",
+                "sourceNumbers": [
+                  1.82
+                ]
+              },
+              "value": {
+                "text": "95 mL/min/1,73 m²",
+                "locale": "it",
+                "template": "documented-authored-3a7569e13eb70f65c035",
+                "sourceNumbers": [
+                  95
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Creatinina escreta",
+                "locale": "it",
+                "template": "documented-authored-d93f6c438becd0134a51"
+              },
+              "value": {
+                "text": "20,6 mg/kg/die (atteso 20 a 25)",
+                "locale": "it",
+                "template": "documented-authored-5b305e853b83e44b8cfe",
+                "sourceNumbers": [
+                  20.6,
+                  20,
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intervallo KDIGO G1: funzione normale o elevata",
+            "locale": "it",
+            "template": "documented-authored-8815b5c197eb2c1d403f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clearance misurata (non corretta)",
+                "locale": "it",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "56 mL/min",
+                "locale": "it",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intervallo KDIGO G3a: funzione lievemente-moderatamente ridotta",
+            "locale": "it",
+            "template": "documented-authored-006891837324d33ba940"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Clearance misurata (non corretta)",
+                "locale": "it",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "21 mL/min",
+                "locale": "it",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  21
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intervallo G4 della KDIGO: funzione gravemente ridotta",
+            "locale": "it",
+            "template": "documented-authored-17265c89bb524fc7c255"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التصفية المقاسة (غير مصححة)",
+                "locale": "ar",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "١٠٠ mL/min",
+                "locale": "ar",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مصحح إلى 1,73 m² (SC ١٫٨٢ m²)",
+                "locale": "ar",
+                "template": "documented-authored-415279688771a761c3e0",
+                "sourceNumbers": [
+                  1.82
+                ]
+              },
+              "value": {
+                "text": "٩٥ mL/min/1,73 m²",
+                "locale": "ar",
+                "template": "documented-authored-3a7569e13eb70f65c035",
+                "sourceNumbers": [
+                  95
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الكرياتينين المطروح",
+                "locale": "ar",
+                "template": "documented-authored-d93f6c438becd0134a51"
+              },
+              "value": {
+                "text": "٢٠٫٦ mg/kg/يوم (المتوقع ٢٠ إلى ٢٥)",
+                "locale": "ar",
+                "template": "documented-authored-5b305e853b83e44b8cfe",
+                "sourceNumbers": [
+                  20.6,
+                  20,
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "النطاق G1 من KDIGO: وظيفة طبيعية أو عالية",
+            "locale": "ar",
+            "template": "documented-authored-8815b5c197eb2c1d403f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التصفية المقاسة (غير مصححة)",
+                "locale": "ar",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "٥٦ mL/min",
+                "locale": "ar",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "النطاق G3a من KDIGO: وظيفة منخفضة بشكل خفيف إلى متوسط",
+            "locale": "ar",
+            "template": "documented-authored-006891837324d33ba940"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التصفية المقاسة (غير مصححة)",
+                "locale": "ar",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "٢١ mL/min",
+                "locale": "ar",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  21
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "النطاق G4 من KDIGO: وظيفة منخفضة بشدة",
+            "locale": "ar",
+            "template": "documented-authored-17265c89bb524fc7c255"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "测得清除率（未校正）",
+                "locale": "zh",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "100 mL/min",
+                "locale": "zh",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "校正为1,73 m²（SC 1.82 m²）",
+                "locale": "zh",
+                "template": "documented-authored-415279688771a761c3e0",
+                "sourceNumbers": [
+                  1.82
+                ]
+              },
+              "value": {
+                "text": "95 mL/min/1,73 m²",
+                "locale": "zh",
+                "template": "documented-authored-3a7569e13eb70f65c035",
+                "sourceNumbers": [
+                  95
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "排泄的肌酐",
+                "locale": "zh",
+                "template": "documented-authored-d93f6c438becd0134a51"
+              },
+              "value": {
+                "text": "20.6 mg/kg/天（预期 20 至 25）",
+                "locale": "zh",
+                "template": "documented-authored-5b305e853b83e44b8cfe",
+                "sourceNumbers": [
+                  20.6,
+                  20,
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G1范围：正常或高功能",
+            "locale": "zh",
+            "template": "documented-authored-8815b5c197eb2c1d403f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "测得清除率（未校正）",
+                "locale": "zh",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "56 mL/min",
+                "locale": "zh",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G3a范围：轻度至中度降低的功能",
+            "locale": "zh",
+            "template": "documented-authored-006891837324d33ba940"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "测得清除率（未校正）",
+                "locale": "zh",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "21 mL/min",
+                "locale": "zh",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  21
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G4范围：肾功能严重降低",
+            "locale": "zh",
+            "template": "documented-authored-17265c89bb524fc7c255"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "測定クリアランス（補正なし）",
+                "locale": "ja",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "100 mL/min",
+                "locale": "ja",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "1,73 m²に補正（SC 1.82 m²）",
+                "locale": "ja",
+                "template": "documented-authored-415279688771a761c3e0",
+                "sourceNumbers": [
+                  1.82
+                ]
+              },
+              "value": {
+                "text": "95 mL/min/1,73 m²",
+                "locale": "ja",
+                "template": "documented-authored-3a7569e13eb70f65c035",
+                "sourceNumbers": [
+                  95
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "排泄されたクレアチニン",
+                "locale": "ja",
+                "template": "documented-authored-d93f6c438becd0134a51"
+              },
+              "value": {
+                "text": "20.6 mg/kg/日（期待値 20 〜 25）",
+                "locale": "ja",
+                "template": "documented-authored-5b305e853b83e44b8cfe",
+                "sourceNumbers": [
+                  20.6,
+                  20,
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G1範囲：正常または高値の機能",
+            "locale": "ja",
+            "template": "documented-authored-8815b5c197eb2c1d403f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "測定クリアランス（補正なし）",
+                "locale": "ja",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "56 mL/min",
+                "locale": "ja",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G3a範囲：軽度から中等度低下した機能",
+            "locale": "ja",
+            "template": "documented-authored-006891837324d33ba940"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "測定クリアランス（補正なし）",
+                "locale": "ja",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "21 mL/min",
+                "locale": "ja",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  21
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G4範囲：腎機能が重度に低下",
+            "locale": "ja",
+            "template": "documented-authored-17265c89bb524fc7c255"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "UCr 100, 1.440 mL, PCr 1,0, homem 70 kg e 170 cm: 100 mL/min, corrigido 95",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "मापी गई क्लीयरेंस (असुधारित)",
+                "locale": "hi",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "100 mL/min",
+                "locale": "hi",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "1,73 m² के लिए समायोजित (SC 1.82 m²)",
+                "locale": "hi",
+                "template": "documented-authored-415279688771a761c3e0",
+                "sourceNumbers": [
+                  1.82
+                ]
+              },
+              "value": {
+                "text": "95 mL/min/1,73 m²",
+                "locale": "hi",
+                "template": "documented-authored-3a7569e13eb70f65c035",
+                "sourceNumbers": [
+                  95
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "उत्सर्जित क्रिएटिनिन",
+                "locale": "hi",
+                "template": "documented-authored-d93f6c438becd0134a51"
+              },
+              "value": {
+                "text": "20.6 mg/kg/दिन (अपेक्षित 20 से 25)",
+                "locale": "hi",
+                "template": "documented-authored-5b305e853b83e44b8cfe",
+                "sourceNumbers": [
+                  20.6,
+                  20,
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G1 श्रेणी: सामान्य या उच्च कार्य",
+            "locale": "hi",
+            "template": "documented-authored-8815b5c197eb2c1d403f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "UCr 80, 1.500 mL, PCr 1,5, sem peso: 55,6 mL/min (G3a)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "मापी गई क्लीयरेंस (असुधारित)",
+                "locale": "hi",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "56 mL/min",
+                "locale": "hi",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G3a श्रेणी: हल्के से मध्यम रूप से कम कार्य",
+            "locale": "hi",
+            "template": "documented-authored-006891837324d33ba940"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "UCr 60, 1.000 mL, PCr 2,0: 20,8 mL/min (G4)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "मापी गई क्लीयरेंस (असुधारित)",
+                "locale": "hi",
+                "template": "documented-authored-d75395f8da3ac5900a0a"
+              },
+              "value": {
+                "text": "21 mL/min",
+                "locale": "hi",
+                "template": "documented-authored-a34ae48a2d54a9162b34",
+                "sourceNumbers": [
+                  21
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KDIGO G4 सीमा: गुर्दे की कार्यक्षमता गंभीर रूप से कम",
+            "locale": "hi",
+            "template": "documented-authored-17265c89bb524fc7c255"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

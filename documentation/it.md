@@ -94,3 +94,36 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Intervallo KDIGO G1: funzione normale o elevata
+
+| Dettagli del risultato | |
+| --- | --- |
+| Clearance misurata (non corretta) | 100 mL/min |
+| Corretto per 1,73 m² (SC 1,82 m²) | 95 mL/min/1,73 m² |
+| Creatinina escreta | 20,6 mg/kg/die (atteso 20 a 25) |
+
+
+### 2
+
+Intervallo KDIGO G3a: funzione lievemente-moderatamente ridotta
+
+| Dettagli del risultato | |
+| --- | --- |
+| Clearance misurata (non corretta) | 56 mL/min |
+
+
+### 3
+
+Intervallo G4 della KDIGO: funzione gravemente ridotta
+
+| Dettagli del risultato | |
+| --- | --- |
+| Clearance misurata (non corretta) | 21 mL/min |
+

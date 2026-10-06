@@ -94,3 +94,36 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+KDIGO G1 range: normal or high function
+
+| Result details | |
+| --- | --- |
+| Measured clearance (uncorrected) | 100 mL/min |
+| Corrected to 1,73 m² (SC 1.82 m²) | 95 mL/min/1,73 m² |
+| Excreted creatinine | 20.6 mg/kg/day (expected 20 to 25) |
+
+
+### 2
+
+KDIGO G3a range: mildly to moderately decreased function
+
+| Result details | |
+| --- | --- |
+| Measured clearance (uncorrected) | 56 mL/min |
+
+
+### 3
+
+KDIGO G4 range: severely decreased kidney function
+
+| Result details | |
+| --- | --- |
+| Measured clearance (uncorrected) | 21 mL/min |
+

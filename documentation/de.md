@@ -94,3 +94,36 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+KDIGO-G1-Bereich: normale oder hohe Funktion
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gemessene Clearance (unkorrigiert) | 100 mL/min |
+| Korrigiert auf 1,73 m² (SC 1,82 m²) | 95 mL/min/1,73 m² |
+| Ausgeschiedenes Kreatinin | 20,6 mg/kg/Tag (erwartet 20 bis 25) |
+
+
+### 2
+
+KDIGO-G3a-Bereich: leicht bis mäßig verminderte Funktion
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gemessene Clearance (unkorrigiert) | 56 mL/min |
+
+
+### 3
+
+KDIGO G4-Bereich: stark eingeschränkte Nierenfunktion
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gemessene Clearance (unkorrigiert) | 21 mL/min |
+

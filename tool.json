@@ -173,7 +173,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Clearance urinário 24 h:UCr×volume/(PCr×1440); indexação 1,73/SCMosteller",
-    "implementationVersion": "clearance-de-creatinina-urina-24h@native-2026-10-03+f5e6a12acf90",
+    "implementationVersion": "clearance-de-creatinina-urina-24h@native-2026-10-05+ef5508500e4c",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/28474735/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -309,7 +309,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083"
+      "implementationHash": "ef5508500e4cc76da905457a29102888bad2f1bcf64e7d26368fd421ecd59f63",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "clearance-de-creatinina-urina-24h@native-2026-10-03+f5e6a12acf90",
+          "previousImplementationHash": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083",
+          "implementationHash": "ef5508500e4cc76da905457a29102888bad2f1bcf64e7d26368fd421ecd59f63",
+          "scientificBodySha256": "0a574f6a98d82cb9a80b7d155f4a2cddf5698f0cf8dff82146916fc4bf771579",
+          "metadataContractHash": "32cef43cd81059f6492a4bc431bb3077adac1a693f67f027d5f78296b07edf70",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Esta conta exige coleta completa de urina de 24 horas e creatinina urinária e sérica em unidades compatíveis. O volume é convertido para mL/min dividindo por 1440 minutos. Coleta incompleta ou excessiva pode distorcer o resultado; a KDIGO 2024 destaca esses erros. Clearance de creatinina não é uma medida direta da taxa de filtração glomerular. O valor absoluto em mL/min é distinto do valor opcional indexado para 1,73 m²; informe altura e peso para essa indexação e confira qual unidade o protocolo exige.",
     "limitsEvidence": {
@@ -335,15 +363,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/clearance-de-creatinina-urina-24h/calculator.js",
-    "bytes": 5939,
-    "sha256": "f5e6a12acf90ca3fc748a8da867ad608105535f6d379988d31774f7fe6bc1083"
+    "bytes": 6144,
+    "sha256": "ef5508500e4cc76da905457a29102888bad2f1bcf64e7d26368fd421ecd59f63"
   },
-  "sourceToolSha256": "b0368b3f5cb64f8cca79834031a3bb9c001833affeb06e2595ce669a8b9775d6",
+  "sourceToolSha256": "572db074f782608223c8cff43ce2b6e5ed03a5f2bb9f2a404ef59631514363b5",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "2ac46c9915ab0985d6ca0b19a2a11cf88b25b041b8ed33394d2d5fe1da19e664",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

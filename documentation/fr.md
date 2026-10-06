@@ -94,3 +94,36 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Plage KDIGO G1 : fonction normale ou élevée
+
+| Détails du résultat | |
+| --- | --- |
+| Clairance mesurée (non corrigée) | 100 mL/min |
+| Corrigé pour 1,73 m² (SC 1,82 m²) | 95 mL/min/1,73 m² |
+| Créatinine excrétée | 20,6 mg/kg/jour (attendu 20 à 25) |
+
+
+### 2
+
+Plage KDIGO G3a : fonction légèrement à modérément diminuée
+
+| Détails du résultat | |
+| --- | --- |
+| Clairance mesurée (non corrigée) | 56 mL/min |
+
+
+### 3
+
+Plage G4 de KDIGO : fonction gravement diminuée
+
+| Détails du résultat | |
+| --- | --- |
+| Clairance mesurée (non corrigée) | 21 mL/min |
+

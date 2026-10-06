@@ -94,3 +94,36 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Faixa G1 da KDIGO: função normal ou alta
+
+| Detalhes do resultado | |
+| --- | --- |
+| Clearance medido (sem correção) | 100 mL/min |
+| Corrigido para 1,73 m² (SC 1,82 m²) | 95 mL/min/1,73 m² |
+| Creatinina excretada | 20,6 mg/kg/dia (esperado 20 a 25) |
+
+
+### 2
+
+Faixa G3a da KDIGO: função leve a moderadamente diminuída
+
+| Detalhes do resultado | |
+| --- | --- |
+| Clearance medido (sem correção) | 56 mL/min |
+
+
+### 3
+
+Faixa G4 da KDIGO: função gravemente diminuída
+
+| Detalhes do resultado | |
+| --- | --- |
+| Clearance medido (sem correção) | 21 mL/min |
+
